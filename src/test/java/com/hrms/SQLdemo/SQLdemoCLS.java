@@ -10,9 +10,10 @@ public class SQLdemoCLS {
         String DBUrl="jdbc:mysql://3.237.189.167:3306/syntaxhrm_mysql";
         String userName="syntax_hrm";
         String password="syntaxhrm123";
-        String query="select * from hs_hr_employees;";
+        String query="select * from hs_hr_employees";
         Connection connection= DriverManager.getConnection(DBUrl,userName,password);
        List<EmployeeInfo>employeeInfosList=extracted(query, connection);
+
         System.out.println(employeeInfosList);
 
 
